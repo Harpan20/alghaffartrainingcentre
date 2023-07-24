@@ -20,8 +20,7 @@
     {{-- icon --}}
     <link
         rel="icon"
-        {{-- href="{{ Vite::asset('resources/icons/favicon.png') }}" --}}
-        href="{{ asset('favicon.png') }}"
+        href="{{ Vite::asset('resources/icons/favicon.png') }}"
     >
 
     <!-- Fonts -->
