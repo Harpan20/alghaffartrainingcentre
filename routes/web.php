@@ -89,7 +89,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/admin/kelas/{kelas}', [KelasController::class, 'destroy'])->name('admin.kelas.destroy');
 
     // Pendaftaran
-    Route::post('/pendaftaran', [PendaftaranController::class, 'store'])->name('pendaftaran.store');
+    // Route::post('/pendaftaran', [PendaftaranController::class, 'store'])->name('pendaftaran.store');
 });
+
+Route::post('/pendaftaran', [PendaftaranController::class, 'store'])->name('pendaftaran.store');
+
 
 require __DIR__ . '/auth.php';
